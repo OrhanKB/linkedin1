@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css" class="">
+    <title>LinkedIn</title>
+</head>
+<body>
+<!----------------------NAVBAR STARTS------------------>
+<div>  
+<nav class="navbar navbar-expand-lg navbar-light float-right mt-2">
+<a href=""><img style="margin-right: 420px;width: 160px;height: 40px;" src="data:image/png;base64,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" alt=""></a>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div style="line-height: 0.5;" class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <a class="text-secondary" href="#">
+        <li class="nav-item active pl-3 icon-color">
+          <i class="fa-regular fa-compass"></i>
+          <a class="nav-link text-secondary" href="#">Keşfet <span class="sr-only">(current)</span></a>
+        </li>
+      </a>
+      <a class="text-secondary" href="#">
+        <li class="nav-item active pl-3 icon-color">
+           <i class="fa-solid fa-users"></i>
+           <a class="nav-link text-secondary" href="#">Kişiler <span class="sr-only">(current)</span></a>
+          </li>
+        </a>
+        <a class="text-secondary" href="#">
+          <li class="nav-item active pl-3 icon-color">
+            <i class="fa-solid fa-chalkboard"></i>
+            <a class="nav-link text-secondary" href="#">Learning <span class="sr-only">(current)</span></a>
+          </li>
+        </a>
+        <a class="text-secondary" href="#">
+          <li class="nav-item active border-right pl-3 pr-3 icon-color">
+            <i class="fa-solid fa-briefcase"></i>
+            <a class="nav-link text-secondary" href="#">İş Alanları <span class="sr-only">(current)</span></a>
+          </li>
+        </a>
+        
+          <button style="margin-left: 4px; border-radius: 30px;height:48px;width: 130px;margin-right: 6px;font-weight: 500;" type="button" class="button btn-light">Hemen Katıl</button>
+          <button style="margin-left: 4px; border-radius: 30px;height:48px;width: 130px;margin-right: 6px;font-weight: 500;margin-right: 160px;" type="button" class="btn2">Oturum Aç</button>
+
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-------------------- NAVBAR ENDS----------->
+
+<!------------------------- First Article Starts--------------------->
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-6 top-writing">
+      <h1 class="display-4">Profesyonel topluluğunuza hoş geldiniz!</h1>
+      <form class="mt-5 form">
+        <div class="form-group">
+          <input style="height: 45px;border-color: black;border-radius: 2px;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-posta veya telefon numarası">
+        </div>
+        <div class="buttonIn mb-3">
+          <input style="border-color: black;border-radius: 2px;height: 45px;border-width: thin;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifre">
+        </div>
+        <a style="color: black;" href="#">Şifrenizi mi unuttunuz ?</a> <br>
+        <button type="button" class="btn btn-block mt-3" style="border-radius: 30px;height: 55px;;"> <h5 class="fw mt-1">Oturum Açın</h5></button>
+        <div style="width: 100%; height: 20px; border-bottom: 1px solid gray; text-align: center;margin-top: 18px;margin-bottom: 25px;">
+          <span style="font-size: 15px; background-color: white; padding: 0 10px;color: gray;">
+            veya <!--Padding is optional-->
+          </span>
+        </div>
+        <button type="button" class="btn3 btn-block mt-3 pt-1" style="border-radius: 30px;height: 55px;;"> <h5 class="fw4 mt-1"><img style="width: 20px;height: 20px;margin-right: 10px;margin-bottom: 3px;" src="data:image/jpeg;base64,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" alt=""> Google ile oturum açın</h5></button>
+        <button type="button" class="btn4 btn-block mt-3 pt-1" style="border-radius: 30px;height: 55px;;"> <h6 class="fw mt-1">LinkedIn'de yeni misiniz? Hemen katılın</h6></button>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <img class="top-pic" src="assets/dxf91zhqd2z6b0bwg85ktm5s4 (2).svg" alt="">
+    </div>
+  </div>
+</div>
+<!------------------------- First Article Ends--------------------->
+
+
+<!---------------------------------- Second Article Starts------------------------>
+<div style="background-color: rgb(239, 238, 232);flex: nowrap;" class="container-fluid"> 
+  <div class="container">
+  <div" class="row">
+    <div class="col-sm-4 mt-5 text-left">
+      <h1 style="font-weight: 300;font-size: 45px;text-align: left; float: left;">Sizin için uygun olan işi veya stajı bulun</h1>
+    </div>
+    <div style="padding-left:120px;" class="col-sm-8 mt-5 sm-offset-2">
+      <h5 style="font-size: 16px;font-weight: 500;color: rgb(72, 72, 72);">ÖNERİLEN ARAMALAR</h5>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Mühendislik</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">İş Geliştirme</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Finans</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Yönetici Asistanı</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Perakende Uzmanı</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Müşteri Hizmetleri</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Operasyon</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Bilgi Teknolojisi</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">Pazarlama</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;"> <h6 class="fw mt-1">İnsan Kaynakları</h6></button>
+
+      <p class="mt-3">
+        <a style="font-weight: 500;line-height: 0.2px;" class="btn showmorebtn border-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Daha Fazla Göster
+          <i class="fa-sharp fa-solid fa-angle-down"></i>
+        </a>
+      </p>
+
+      <div class="collapse" id="collapseExample">
+      <div style="background-color: rgb(239, 238, 232);display: inline-block;" class="card card-body border-0">
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Mühendislik</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">İş Geliştirme</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Finans</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Yönetici Asistanı</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Perakende Uzmanı</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Müşteri Hizmetleri</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Operasyon</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Bilgi Teknolojisi</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">Pazarlama</h6></button>
+      <button type="button" class="btn-dropdown mt-2 pl-4 pr-4 pb-2" style="border-radius: 30px;height: 55px;padding-top: 12px;width:max-content;"> <h6 class="fw mt-1">İnsan Kaynakları</h6></button>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
+</div>
+<div style="background-color: rgb(227, 217, 197);flex: nowrap;padding-bottom: 80px;padding-top: 80px;" class="container-fluid pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <h2 style="font-weight: 400;font-size: 38px;color: #b24020;;">Milyonlarca kişinin iş ilanınızı görmesi için işinizi yayınlayın</h2>
+      </div>
+      <div class="col-sm-8">
+        <button style=" border-radius: 30px;height:54px;width: 150px;font-weight: 500;margin-left: 100px;margin-top: 45px;" type="button" class="btn2">İş İlanı Yayınla</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------------------------- Second Article Ends------------------------>
+
+
+<!------------------------------- Carousel Starts------------------->
+<div style="background-color:rgb(239, 238, 232) ;" class="container-fluid"> 
+ <div class="row">
+<div class="col-sm-12">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!------------BİRİNCİ CAROUSEL---------->
+    <div style="margin-top: 160px;padding-bottom: 200px;" class="carousel-item active">
+        <div class="row">
+    <div class="col-sm-8">
+      <h2 style="font-weight: 400;font-size: 40px;color: #8f5849;padding-left: 150px;margin-top: 100px;">Çalışmaya açık olduğunuzu, <br> doğru kişilerin bilmesini <br> sağlayın.</h2>
+      <h2 style="font-weight: 200;padding-left: 150px;">Çalışmaya Açık özelliği ile, yeni iş fırsatları <br> aradığınızı kariyer uzmanlarına gizli olarak <br> bildirebilir veya LinkedIn topluluğunuzla <br> herkese açık olarak paylaşabilirsiniz.</h2>
+
+    </div>
+      <div class="col-sm-4">
+        <img style="width: 440px;height: 440px;margin-right: 170px;;" class="d-block float-right" src="https://static.licdn.com/aero-v1/sc/h/dbvmk0tsk0o0hd59fi64z3own" alt="First slide">
+      </div>
+        </div>
+    </div>
+          <!------------BİRİNCİ CAROUSEL---------->
+
+          <!--------------İKİNCİ CAROUSEL-------------->
+      <div style="margin-top: 160px;padding-bottom: 200px;" class="carousel-item">
+        <div class="row">
+          <div class="col-sm-8">
+        <h2 style="font-weight: 400;font-size: 40px;color: #8f5849;padding-left: 150px;margin-top: 100px;">Bugün yaptığınız görüşmeler, <br> yarın için yeni fırsatlar <br> oluşturabilir.</h2>
+        <h2 style="font-weight: 200;padding-left: 150px;">Tanıdığınız kişilere mesaj göndermek, <br> kariyerinizdeki bir sonraki adımı atarken <br> ilişkilerinizi güçlendirmek için harika bir <br> yöntemdir.</h2>
+
+          </div>
+        <div class="col-sm-4">
+        <img style="width: 440px;height: 440px;margin-right: 170px;" class="d-block float-right" src="https://static.licdn.com/aero-v1/sc/h/2r8kd5zqpi905lkzsshdlvvn5" alt="Second slide">
+        </div>
+      </div>
+      </div>
+                <!--------------İKİNCİ CAROUSEL-------------->
+
+                      <!--------------ÜÇÜNCÜ CAROUSEL-------------->
+    <div style="margin-top: 160px;padding-bottom: 200px;" class="carousel-item">
+        <div class="row">
+      <div class="col-sm-8">
+        <h2 style="font-weight: 400;font-size: 40px;color: #8f5849;padding-left: 150px;margin-top: 100px;">Sektörünüzden haberdar olun</h2>
+        <h2 style="font-weight: 200;padding-left: 150px;">LinkedIn‘de, sektörünüzdeki en güncel <br> konular hakkında bilgi sahibi olabilmeniz <br> için canlı videolardan hikayelere ve haber <br> bültenlerine kadar birçok yöntem <br> mevcuttur. </h2>
+
+
+      </div>
+      <div class="col-sm-4">
+        <img style="width: 440px;height: 440px;margin-right: 170px;" class="d-block float-right" src="https://static.licdn.com/aero-v1/sc/h/ann24vsq7r0ux3vipqa1n90gg" alt="Third slide">
+      </div>
+      </div>
+    </div>
+                   <!--------------ÜÇÜNCÜ CAROUSEL-------------->
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+ </div>
+  </div>
+</div>
+<!------------------------------- Carousel Ends---------------------->
+<div style="margin-top: 160px;padding-bottom: 160px" class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img style="width: 312px;height: 312px;" src="https://static.licdn.com/aero-v1/sc/h/b1fxwht7hdbeusleja7ciftsj" alt="">
+      <h1 style="font-weight: 300;font-size: 45px;text-align: left; float: left;;">Yardımcı olabilecek <br> kişilerle bağlantı kurun</h1> <hr style="border:none">
+      <button type="button" class="btn4 mt-3 pl-4 pr-4 pt-1" style="border-radius: 30px;height: 50px;;"> <h6 class="fw mt-1">Tandığınız kişileri bulun</h6></button>
+
+
+    </div>
+    <div class="col-sm-6">
+      <img style="width: 312px;height: 312px;" src="https://static.licdn.com/aero-v1/sc/h/dkfub4sc7jgzg3o31flfr91rv" alt=""> 
+      <h1 style="font-weight: 300;font-size: 45px;text-align: left; float: left;">Başarılı olmak için <br> gerekli olan yetenekleri öğrenin</h1> <hr style="border: 0px;">
+      <div style="background-color: white;" class="btn-group border-0">
+        <button data-toggle="dropdown" aria-haspopup="true" type="button" class="btn4 mt-3 pl-4 pr-4 pt-1 dropdown" style="border-radius: 5px;height: 50px;width: 400px;border-color: grey;"> <i style="margin-top: 12px;" class="fa-sharp fa-solid fa-caret-down float-right"></i> <h4 style="font-weight: 400;float: left;margin-top: 4px;" class=" text-left">Konu seçin</h4></button>
+
+        <div style="overflow:scroll;" class="dropdown-menu">
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Grafik Tasarım <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Müşteri Hizmetleri <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Profesyonel Gelişim <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Ağ ve Sistem Yönetimi <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">DevOps <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">İş Analizi ve Stratejisi <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Finans ve Muhasebe <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Kariyer Gelişimi <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Web Geliştirme <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Web Tasarım <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Yazılım Geliştirme <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Liderlik ve Yönetim <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Satış <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">Peoje Yönetimi <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#"> Pazarlama  <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+          <a style="width: 400px;line-height: 0.1;" class="dropdown-item pb-2 mb-3" href="#">AEC <hr style="border: 0;"> 0+ eğitim</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div style="background-color: rgb(239, 238, 232);padding-left: 190px;padding-top: 250px;" class="col-sm-6">
+      <h2 style="font-weight: 400;font-size: 38px;color: #b24020;;">LinkedIn kimin için?</h2>
+      <h3 style="font-weight: 300;font-size: 38px;text-align:left;">Profesyonel yaşamını <br> yönlendirmek isteyen herkes.</h3>
+      <button type="button" class="btn-group mt-4 pl-4 border-0" style="border-radius: 2px;height: 55px;padding-top: 12px;width: 400px;"> <h5 style="font-weight: 400;" class="fw mt-1 border-0">Bir iş arkadaşı ve okul arkadaşı bulun</h5> <i class="fa-solid fa-chevron-right pl-4 mt-2"></i> </button> <hr style="border: 0;">
+      <button type="button" class="btn-group pl-4 border-0 " style="border-radius: 2px;height: 55px;padding-top: 12px;width: 400px;"> <h5 style="font-weight: 400;" class="fw mt-1 border-0">Yeni bir iş bulma</h5> <i style="padding-left: 200px;" class="fa-solid fa-chevron-right mt-2"></i> </button> <hr style="border: 0;">
+      <button type="button" class="btn-group pl-4 border-0" style="border-radius: 2px;height: 55px;padding-top: 12px;width: 400px;"> <h5 style="font-weight: 400;" class="fw mt-1 border-0">Bir eğitim veya alıştırma bulun</h5> <i style="margin-left: 77px;" class="fa-solid fa-chevron-right mt-2"></i> </button>
+    </div>
+    <div style="overflow-x: hidden;padding-left: 100px;" class="col-sm-6">
+      <img style="height: 840px;" src="https://static.licdn.com/aero-v1/sc/h/292yd0en6qdvkbezeuj71yu4y" alt="">
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 150px;" class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="display-4">LinkedIn‘deki, iş arkadaşlarınıza, okul arkadaşlarınıza ve dostlarınıza katılın.</h1>
+      <button type="button" class="btn mt-4" style="border-radius: 30px;height: 50px;"> <h5 style="font-size: 15px;margin-top: 6px;" class="fw pr-3 pl-3">Başlayın</h5></button>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: rgb(239, 238, 232)" class="container-fluid mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+        <a href=""><img class="mt-4" style="margin-right: 420px;width: 80px;height: 20px;" src="data:image/png;base64,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" alt=""></a>    
+
+      </div>
+      <div style="margin-left: 250px;" class="col-sm-2 ">
+      <li style="font-weight: 500;" class="no-bullets mb-2 mt-4">Genel</li>
+      <li class="no-bullets"><a class="li-color" href="">Kayıt Olun</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Yardım Merkezi</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Hakkında</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Basın</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Blog</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Kariyer</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Geliştiriciler</a></li>
+      </div>
+      <div class="col-sm-3">
+      <li style="font-weight: 500;" class="no-bullets mb-2 mt-4">LinkedIn‘e Göz Atın</li>
+      <li class="no-bullets"><a class="li-color" href="">Learning</a></li>
+      <li class="no-bullets"><a class="li-color" href="">İş Alanları</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Maaş</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Mobil</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Hizmetler</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Ürünler</a></li>
+      
+
+      </div>
+      <div class="col-sm-3">
+      <li style="font-weight: 500;" class="no-bullets mb-2 mt-4">İşletme Çözümleri</li>
+      <li class="no-bullets"><a class="li-color" href="">Yetenek</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Pazarlama</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Satış</a></li>
+      <li class="no-bullets"><a class="li-color" href="">Learning</a></li>
+     
+
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
